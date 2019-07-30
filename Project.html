@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <style>
+
+
+  .customContainer{
+    display:flex;
+    width:inherit;
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+  .sidebar{
+    background-color: #D3D3D333;
+    font-size: 3.5vh;
+    line-height:3.0rem;
+    width:20%;
+
+  }
+
+  .sidebar .col-md-4{
+    text-align: right;
+  }
+
+  .profile{
+    margin:15px;
+    padding-bottom: 5px;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+  }
+
+  .contentCustom{
+    width: 85%;
+    height: 100%;
+    margin:25px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .card {
+      background-color: #D3D3D333;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px  #c4c4c4;
+  }
+
+  .card .card-title{
+    border-bottom: 1px solid;
+  }
+
+
+  </style>
+
+  <body>
+
+
+
+    <div class = "customContainer">
+
+      <div class = "sidebar">
+
+        <div class = "personalImage">
+        <img class="profile" src="avatar.png" class="rounded float-left" alt="..."><br>
+        </div>
+
+        <!-- <nav class="nav flex-column"> -->
+        <div id="list-example" class="list-group">
+        <a class="nav-link" href=index.html>
+          <div class="row">
+            <div class="col-md-4">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+              <div class="col-md-8">
+             Home</div>
+          </div></a>
+        <a class="nav-link" href=Education.html>
+          <div class="row">
+            <div class="col-md-4">
+              <i class="fa fa-book" aria-hidden="true"></i>
+            </div>
+              <div class="col-md-8">
+             Education</div>
+          </div></a>
+        <a class="nav-link" href=Skill.html>
+          <div class="row">
+            <div class="col-md-4">
+              <i class="fa fa-tasks" aria-hidden="true"></i>
+            </div>
+              <div class="col-md-8">
+             Skills</div>
+          </div></a>
+        <a class="nav-link" href=Experience.html>
+          <div class="row">
+            <div class="col-md-4">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+            </div>
+              <div class="col-md-8">
+             Experience</div>
+          </div></a>
+        <a class="nav-link" href=Project.html>
+          <div class="row">
+            <div class="col-md-4">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </div>
+              <div class="col-md-8">
+             Projects</div>
+          </div></a>
+        <a class="nav-link" href=Contact.html>
+          <div class="row">
+            <div class="col-md-4">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+              <div class="col-md-8">
+             Contact</div>
+          </div></a>
+       </div>
+        <!-- </nav> -->
+      </div>
+
+      <div class = "contentCustom">
+
+
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">1) YATRA | B2B-HOTEL</h5>
+            <p class="card-text">B2B-Hotel is basically a web portal used by travel agents for hotel bookings.
+              My role in this project was to create rest-microservice's. The complexity in this project was designing a code in such a way to support
+              multiple suppliers , commissioning and marking up the price based on the user (agent) and the supplier. Aerospike was used for uploading special commission
+              against certain hotel's and it was kept dynamic. Java Executor service was used for parallel processing of independent tasks. There were
+              also many features like Hold And Pay , Pan Verification and Mark up along with the normal flow for the hotel booking.
+            </p>
+            <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Aerospike , Mongo , MySql , Hibernate </small></p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">2) YATRA | B2B-DMT-PROVIDERS</h5>
+            <p class="card-text">I designed and implemented the rest-microservice's for this module which were further connected to the external supplier.
+            The code was loosely coupled and highly scalable. Factory Design pattern was used for handling of multiple suppliers. Strategy Design Pattern was used for
+            handling multiple ways of transaction.
+            </p>
+            <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Mongo </small></p>
+          </div>
+        </div>
+
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">3) YATRA | B2B-PAYMENT-UPLOAD</h5>
+            <p class="card-text">This module was about uploading money in the agent's cash/credit account. The front end part was designed
+            using html , css and react with redux. The backend of the project was a rest-microservice written using java and springboot framework.</p>
+            <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Mongo , React , Redux </small></p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">4) YATRA | BUS AND TRAIN DASHBOARDS</h5>
+            <p class="card-text">This module was created to monitor the api's latency , throughput and response code.
+            Spring actuator was used to publish data on a management url. The url was scraped using prometheus. The data was displayed in the
+          form of histograms , gauges and pie chart using grafana.</p>
+            <p class="card-text"><small class="text-muted">Technology : Java , SpringBootActuator , Prometheus , Grafana </small></p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">5) YATRA | ORDER-MANAGEMENT-SYSTEM</h5>
+            <p class="card-text">
+            This module was made for internal back office system . Booking information was consumed using Kafka consumer. My role in this project was
+            related to flight back office drop. The code was loosely coupled and hightly scalable. It can handle drop for multiple products by overriding
+            the functions specific to those products. Also for a particular product it had all the functionalities like cancellation,rescheduling
+            and adding new itinerary.</p>
+            <p class="card-text"><small class="text-muted">Technology : Java , DropWizard , Kafka , MySql , Hibernate </small></p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">6) YATRA | COMMERCIAL-SERVICE</h5>
+              <p class="card-text">
+              This module mainly consisted of the commission values for hotel and flight specific to corporate's id. The main challenge in the project was
+              to design the tables by maintaing proper relationships between the table. Mongo was used for caching the response for every unique corporate id.
+              MyBatis was used for natively quering the database with extensive join operations.</p>
+              <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Mongo , MySql , Hibernate , MyBatis </small></p>
+          </div>
+        </div>
+
+
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">7) YATRA | TRAVEL-INSURANCE</h5>
+            <p class="card-text">
+            This module was basically a rest-microservice connected to external supplier for issuing travel insurance in domestic and international
+            sector. The static data for the insurance plans was stored in the sql and mongo was used to store the service request and response. Cross-sell
+            insurance was also implemented to be sold with flights.</p>
+            <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Mongo , MySql , Hibernate </small></p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">8) YATRA | PAN SERVICES</h5>
+            <p class="card-text">This module was basically a rest-microservice connected to external supplier for validation of the pan entered by the user.
+            The data was kept in mongo for a few days to save supplier hits. The code was loosely coupled.</p>
+            <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Mongo </small></p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">9) YATRA | BOOKING-SCHEDULERS</h5>
+            <p class="card-text">Schedulers basically perform an automated task repeatedly after a given interval of time. The role of the scheduler was to pick the booking stored
+            in the lob database (mysql or mongo) and to publish the data to the backoffice using a kafka queue or using file transfer protocol (ftp). Another task of the scheduler
+            was to cancel the bookings before the free cancellation for the feature hold and pay and also to generate email alerts and notifications in case of cancellation failure.</p>
+            <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Kafka , Mongo , MySql</small></p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">10) YATRA | B2B-COMMISSION-SERVICES</h5>
+            <p class="card-text">In B2B line of business , commission part is the most important. Every module like hotel , insurance and etc had their
+            independent commission modules. These module were basically crud operations for maintaing commission values.</small></p>
+            <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , MySql , Hibernate</small></p>
+          </div>
+        </div>
+        <!-- <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">10) COLLEGE | CANCER-DIAGNOSIS-SYSTEM</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted">Technology : Matlab</small></p>
+          </div>
+        </div>
+
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">11) JAIN PLASTICS</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted">Technology : Html , Css , Bootstrap</small></p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">12) SELF PORTFOLIO</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted">Technology : Html , Css , Bootstrap</small></p>
+          </div>
+        </div> -->
+
+
+
+      </div>
+
+    </div>
+
+
+
+  </body>
+</html>
