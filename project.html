@@ -130,7 +130,87 @@ a.foot{
       <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">1) YATRA | B2B-HOTEL</h5>
+            <h5 class="card-title">1) MICROSOFT | AZURE-DIGITAL-TWIN </h5>
+            <p class="card-text">A digital twin is a virtual representation of an object or system that spans its lifecycle, is updated from real-time data and uses simulation.
+              My role in this project was to do a POC on the Azure digital twin. A hospital room which had beds and sensors was represented in a Digital Twin. The sensor data was 
+              simulated using a python script and was ingested in Azure digital twin from which it was flowing to Azure time series insights via event hub.
+            </p>
+            <p class="card-text"><small class="text-muted">Technology : Azure function, Azure Digital Twin, Digital Twin Defination Language, C#, Event Hub, Azure Time Series Insight</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row no-margin-no-padding">
+      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">2) MICROSOFT | SUPPLY CHAIN EXTENSION </h5>
+            <p class="card-text"> The supply chain extension is the front end for the PAAS offering in supply chain domain which is hosted on the Azure portal.
+              My role in this project was to learn the technology and to build the MVP for the private preview release from scratch. Via the extension one can deploy the
+              supply chain workspace by calling the Supply Chain Resource Provider. Also, CRUD for other features like data pipelines, datasets, linked services and applications were
+              also developed and delivered. Wrappers over control plane and data plane calls were written which would help to develop the future features at a faster pace in future.
+            </p>
+            <p class="card-text"><small class="text-muted">Technology : Knockout JS , Html , Azure Identity , Ibiza (Microsoft's Internal Portal framework)</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row no-margin-no-padding">
+      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">3) MICROSOFT | DATA PLATFORM</h5>
+            <p class="card-text"> Data Platform is mainly responsible for doing all the analytical data operations for the supply chain platform.
+              My role in this project was to complete the managed data ingestion & export story and to provide filtering capability on top of it. The data was ingested from customer's ADLS account 
+              to supply chain's ADLS account, known as ingestion. The data was partitioned and ingested into the supply chain's ADLS. The data could be exported out from supply chain's ADLS account to
+              partner's ADLS account. Both operations were carried out using a Pyspark script which was hosted in the Azure Synapse Analytics. On top of export, filtering capabilities were built which helped
+              the customer to export data based on ingestions (Ingestion Based Filtering) and schema of the data ( Schema Based Filtering).
+            </p>
+            <p class="card-text"><small class="text-muted">Technology : C# , Azure Data Factory, Azure Synapse Analytics, Azure Data Lake Storage 2 (ADLS) , Pyspark</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row no-margin-no-padding">
+      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">4) BLACKBUCK | DISTRIBUTED TRACING </h5>
+            <p class="card-text"> Distributed tracing is basically a monitoring tool for the distributed microservice architecture.
+              My role in this project was to do learn and implement distributed tracing for the blackbuck infrastructure. A zipkin server was hosted ,applications based on Node JS, a custom middleware was introduced which 
+              reported data to the zipkin server and for the java applications, spring sleuth was introduced which is wrapper for brave library used to report data to the zipkin server. Every request was tagged with a unique 
+              request id and same was logged. A developer could look into the Kibana for the logs with a crisp request id to trace the complete flow of the request. Elastic search was used as the storage for the requests with
+              the retention period marked as 7 days. The other advantage of distributed tracing is one can run a spark job and form the service dependency graph which can help in detecting circular dependency in the system.
+            </p>
+            <p class="card-text"><small class="text-muted">Technology : Zipkin, Node js, Spring sleuth, Java, Elastic Search, Spark</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row no-margin-no-padding">
+      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">5) BLACKBUCK | JMX MBEANS </h5>
+            <p class="card-text"> Java Management Extensions (JMX) is a Java technology that supplies tools for managing and monitoring applications, system objects and service-oriented networks. 
+               Those resources are represented by objects called MBeans. my role in this project was to explore how the metrics will be pushed into the mbean from which the new relic sdk will read the mbean 
+               and data will be plotted on the graph. Spring actuator is used to expose the data of the mbean. Based on the data one alerts were setted, helping the team to act on the systems before they go down.
+            </p>
+            <p class="card-text"><small class="text-muted">Technology : Java , Spring boot, Spring Actuator, JMX Beans, Jconsole , New Relic </small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row no-margin-no-padding">
+      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">6) YATRA | B2B-HOTEL</h5>
             <p class="card-text">B2B-Hotel is basically a web portal used by travel agents for hotel bookings.
               My role in this project was to create rest-microservice's. The complexity in this project was designing a code in such a way to support
               multiple suppliers , commissioning and marking up the price based on the user (agent) and the supplier. Aerospike was used for uploading special commission
@@ -147,7 +227,7 @@ a.foot{
       <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">2) YATRA | B2B-DMT-PROVIDERS</h5>
+            <h5 class="card-title">7) YATRA | B2B-DMT-PROVIDERS</h5>
             <p class="card-text">I designed and implemented the rest-microservice's for this module which were further connected to the external supplier.
             The code was loosely coupled and highly scalable. Factory Design pattern was used for handling of multiple suppliers. Strategy Design Pattern was used for
             handling multiple ways of transaction.
@@ -162,7 +242,7 @@ a.foot{
       <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
         <div class="card">
       <div class="card-body">
-        <h5 class="card-title">3) YATRA | B2B-PAYMENT-UPLOAD</h5>
+        <h5 class="card-title">8) YATRA | B2B-PAYMENT-UPLOAD</h5>
         <p class="card-text">This module was about uploading money in the agent's cash/credit account. The front end part was designed
         using html , css and react with redux. The backend of the project was a rest-microservice written using java and springboot framework.</p>
         <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Mongo , React , Redux , Docker</small></p>
@@ -175,7 +255,7 @@ a.foot{
       <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">4) YATRA | BUS AND TRAIN DASHBOARDS</h5>
+            <h5 class="card-title">9) YATRA | BUS AND TRAIN DASHBOARDS</h5>
             <p class="card-text">This module was created to monitor the api's latency , throughput and response code.
             Spring actuator was used to publish data on a management url. The url was scraped using prometheus. The data was displayed in the
           form of histograms , gauges and pie chart using grafana.</p>
@@ -189,10 +269,10 @@ a.foot{
       <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">5) YATRA | ORDER-MANAGEMENT-SYSTEM</h5>
+            <h5 class="card-title">10) YATRA | ORDER-MANAGEMENT-SYSTEM</h5>
             <p class="card-text">
             This module was made for internal back office system . Booking information was consumed using Kafka consumer. My role in this project was
-            related to flight back office drop. The code was loosely coupled and hightly scalable. It can handle drop for multiple products by overriding
+            related to flight back office data drop. The code was loosely coupled and hightly scalable. It can handle drop for multiple products by overriding
             the functions specific to those products. Also for a particular product it had all the functionalities like cancellation,rescheduling
             and adding new itinerary.</p>
             <p class="card-text"><small class="text-muted">Technology : Java , DropWizard , Kafka , MySql , Hibernate , Docker</small></p>
@@ -205,24 +285,9 @@ a.foot{
       <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">6) YATRA | COMMERCIAL-SERVICE</h5>
+            <h5 class="card-title">11) YATRA | TRAVEL-INSURANCE</h5>
             <p class="card-text">
-            This module mainly consisted of the commission values for hotel and flight specific to corporate's id. The main challenge in the project was
-            to design the tables by maintaing proper relationships between the table. Mongo was used for caching the response for every unique corporate id.
-            MyBatis was used for natively quering the database with extensive join operations.</p>
-            <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Mongo , MySql , Hibernate , MyBatis , Docker </small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row no-margin-no-padding">
-      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">7) YATRA | TRAVEL-INSURANCE</h5>
-            <p class="card-text">
-            This module was basically a rest-microservice connected to external supplier for issuing travel insurance in domestic and international
+            This module was basically a rest-microservice connected to external supplier for issuing travel insurance in domestic and international flight
             sector. The static data for the insurance plans was stored in the sql and mongo was used to store the service request and response. Cross-sell
             insurance was also implemented to be sold with flights.</p>
             <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Mongo , MySql , Hibernate , Docker </small></p>
@@ -235,37 +300,11 @@ a.foot{
       <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">8) YATRA | PAN SERVICES</h5>
-            <p class="card-text">This module was basically a rest-microservice connected to external supplier for validation of the pan entered by the user.
-            The data was kept in mongo for a few days to save supplier hits. The code was loosely coupled.</p>
-            <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Mongo , Docker</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row no-margin-no-padding">
-      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">9) YATRA | BOOKING-SCHEDULERS</h5>
+            <h5 class="card-title">12) YATRA | BOOKING-SCHEDULERS</h5>
             <p class="card-text">Schedulers basically perform an automated task repeatedly after a given interval of time. The role of the scheduler was to pick the booking stored
-            in the lob database (mysql or mongo) and to publish the data to the backoffice using a kafka queue or using file transfer protocol (ftp). Another task of the scheduler
+            in the concerned database (mysql or mongo) and to publish the data to the backoffice using a kafka queue or using file transfer protocol (ftp). Another task of the scheduler
             was to cancel the bookings before the free cancellation for the feature hold and pay and also to generate email alerts and notifications in case of cancellation failure.</p>
             <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , Kafka , Mongo , MySql , Docker</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row no-margin-no-padding">
-      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12 no-margin-no-padding">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">10) YATRA | B2B-COMMISSION-SERVICES</h5>
-            <p class="card-text">In B2B line of business , commission part is the most important. Every module like hotel , insurance and etc had their
-            independent commission modules. These module were basically crud operations for maintaing commission values.</small></p>
-            <p class="card-text"><small class="text-muted">Technology : Java , SpringBoot , MySql , Hibernate , Docker</small></p>
           </div>
         </div>
       </div>
